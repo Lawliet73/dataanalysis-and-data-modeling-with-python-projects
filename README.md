@@ -1,5 +1,16 @@
 
 # King County Housing Price Prediction Project
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Dataset Information](#Dataset-Information)
+- [Dependencies](#Dependencies)
+- [Steps and Code Explanation](#Steps-and-Code-Explanation)
+- [How to Run the Code](#How-to-Run-the-Code)
+- [Outputs and Results](#Outputs-and-Results)
+- [Author](#Author)
+  
 ## Project Overview
 
 This project involves analyzing and predicting housing prices in King County, Washington (which includes Seattle) using various machine learning techniques. The dataset contains house sale prices for homes sold between May 2014 and May 2015. As a Data Analyst working at a Real Estate Investment Trust (REIT), your task is to determine the market price of a house given a set of features such as square footage, number of bedrooms, number of floors, and more.
