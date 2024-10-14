@@ -92,6 +92,38 @@ To run this project, you will need the following Python libraries:
 - Visualizations: Scatter plots, regression plots, and box plots illustrate the relationship between house prices and the features.
 - Hyperparameter Tuning: Grid Search is used to find the optimal Ridge regularization parameter (alpha).
 
+## Additional Programs: Finding the Best Polynomial Degree
+
+### 1. Program to Find the Best Polynomial Degree Based on R²
+This program evaluates different polynomial degrees to determine which degree best fits the data based on the R² score for the test set.
+
+***Steps***:
+- Train the model on different polynomial degrees (e.g., degrees 1 to 5).
+- Evaluate the R² score on the test set for each degree.
+- Find the degree that maximizes the R² score.
+  
+### 2. Program to Visualize Polynomial Degree Performance
+This program applies Ridge regression for different polynomial degrees and visualizes the R² scores for both training and testing sets. The graph helps in selecting the best degree based on the R² score.
+
+***Steps***:
+- Generate synthetic data (sinusoidal with noise).
+- Apply polynomial transformations of varying degrees (e.g., degrees 1 to 15).
+- Fit a Ridge regression model for each polynomial degree.
+- Plot the R² scores for both the training and test sets to visualize model performance.
+
+### 3. How to Use the Programs for Model Selection and Hyperparameter Tuning:
+
+Once you have determined the best polynomial degree using either R² scores or visualizations, you can proceed to refine the model further by applying Ridge regression and cross-validation. The next step involves selecting the best regularization hyperparameter (alpha) using GridSearchCV.
+
+***Steps for Model Selection***:
+
+- Run a modified version of the programs to find the best polynomial degree by evaluating R² scores or visualizing the performance across different degrees.
+- Select the best degree based on the highest R² score or the degree that balances performance on both training and test sets (avoiding overfitting or underfitting).
+- After this the Ridge regression with cross-validation (e.g., GridSearchCV) in the main code can be applied to find the best regularization parameter (alpha) for the selected polynomial degree. This will help you fine-tune the model to prevent overfitting and improve generalization to unseen data.
+  
+By using these two programs in conjunction, you ensure that the model not only fits the data well but also generalizes effectively, as Ridge regression helps control the complexity of the polynomial model by penalizing large coefficients.
+
+
 ## Final Notes
 
 This project demonstrates the process of predicting housing prices in King County using a variety of machine learning models, from simple linear regression to more advanced techniques like Ridge regression with polynomial features and hyperparameter tuning. The code is designed to help capture the relationship between various house features and their prices in a comprehensive manner.
